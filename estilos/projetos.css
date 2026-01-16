@@ -9,35 +9,40 @@
   background: url(../img/projetos.svg);
 }
 
-.swiper {
-  height: 650px;
-  /* overflow: hidden; */
+.carrosel-pai {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.carrosel {
+  overflow: hidden;
 }
 
 .projetos-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
+  transition: transform 300ms ease;
+  will-change: transform;
 }
 
 .projetos-content {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
+  flex: 0 0 100%; /* 1 card por tela */
+  padding: 18px;
+  box-sizing: border-box;
+  min-height: 180px;
 }
 
 .projetos-imagem img {
   width: 575px;
+  height: 500px;
   border-radius: 50px;
 }
 
 .projetos-titulo {
   font-family: "Archivo Black", sans-serif;
-  font-size: 7rem;
+  font-size: 5rem;
   font-weight: 900;
   text-transform: uppercase;
   text-decoration: none;
@@ -47,13 +52,81 @@
   color: transparent; /*junto com o de baixo... */
   -webkit-text-fill-color: transparent; /*tornam o texto invisível, deixando o gradiente aparecer dentro. */
   position: absolute;
+  bottom: 5px;
+  text-align: center;
 }
 
-.projetos-passador-bolinha {
-  background: #e0e0e0;
-  opacity: 0.5;
+.projetos-titulo-longo {
+  bottom: 20px;
+  font-size: 3.2rem;
+  width: 500px;
 }
-.projetos-passador-bolinha-ativo {
-  background: #ff0000;
-  opacity: 1;
+
+.navbtn {
+  height: min-content;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+  background: #3a3a3a;
+  color: #fff;
+  font-weight: 700;
+}
+
+.navbtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 14px;
+}
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  border: 0;
+  cursor: pointer;
+}
+.dot.active {
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 700px) {
+  .projetos-imagem img {
+    width: 402px;
+    height: 350px;
+  }
+
+  .projetos-titulo {
+    font-size: 3rem;
+    bottom: 20px;
+  }
+
+  .projetos-titulo-longo {
+    font-size: 2rem;
+    bottom: 25px;
+  }
+}
+
+@media (max-width: 560px) {
+  .projetos-imagem img {
+    width: 250px;
+    height: 210px;
+  }
+
+  .projetos-titulo {
+    font-size: 1.5rem;
+    bottom: 20px;
+  }
+
+  .projetos-titulo-longo {
+    font-size: 1rem;
+    bottom: 20px;
+  }
 }

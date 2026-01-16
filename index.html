@@ -72,71 +72,50 @@
           <h3 class="h3-pequeno">Cursos intensivos</h3>
           <ul class="cursos-content">
             <li class="cursos-item">
-              <h4 class="cursos-curso">HTML e CSS</h4>
-              <div class="cursos-especificacoes">
+              <h4 class="cursos-curso" data-target="html-css">HTML e CSS</h4>
+              <div class="cursos-especificacoes" id="html-css">
+                <span>Curso em video</span>
+                <span>200h</span>
+              </div>
+            </li>
+            <li class="cursos-item">
+              <h4 class="cursos-curso" data-target="algoritmo">Algoritmo</h4>
+              <div class="cursos-especificacoes" id="algoritmo">
+                <span>Curso em video</span>
+                <span>40h</span>
+              </div>
+            </li>
+            <li class="cursos-item">
+              <h4 class="cursos-curso" data-target="js">JavaScript</h4>
+              <div class="cursos-especificacoes" id="js">
+                <span>Curso em video</span>
+                <span>40h</span>
+              </div>
+            </li>
+            <li class="cursos-item">
+              <h4 class="cursos-curso" data-target="react">React</h4>
+              <div class="cursos-especificacoes" id="react">
                 <span>Curso em video</span>
                 <span>xxh</span>
               </div>
             </li>
             <li class="cursos-item">
-              <h4 class="cursos-curso">Algoritmo</h4>
-              <div class="cursos-especificacoes">
+              <h4 class="cursos-curso" data-target="design">Design</h4>
+              <div class="cursos-especificacoes" id="design">
                 <span>Curso em video</span>
                 <span>xxh</span>
               </div>
             </li>
             <li class="cursos-item">
-              <h4 class="cursos-curso">JavaScript</h4>
-              <div class="cursos-especificacoes">
+              <h4 class="cursos-curso" data-target="git-hub">Git e GitHub</h4>
+              <div class="cursos-especificacoes" id="git-hub">
                 <span>Curso em video</span>
-                <span>xxh</span>
+                <span>20h</span>
               </div>
             </li>
             <li class="cursos-item">
-              <h4 class="cursos-curso">Design</h4>
-              <div class="cursos-especificacoes">
-                <span>Curso em video</span>
-                <span>xxh</span>
-              </div>
-            </li>
-            <li class="cursos-item">
-              <h4 class="cursos-curso">Git e GitHub</h4>
-              <div class="cursos-especificacoes">
-                <span>Curso em video</span>
-                <span>xxh</span>
-              </div>
-            </li>
-            <li class="cursos-item">
-              <h4 class="cursos-curso">WordPress</h4>
-              <div class="cursos-especificacoes">
-                <span>Curso em video</span>
-                <span>xxh</span>
-              </div>
-            </li>
-            <li class="cursos-item">
-              <h4 class="cursos-curso">SEO</h4>
-              <div class="cursos-especificacoes">
-                <span>Curso em video</span>
-                <span>xxh</span>
-              </div>
-            </li>
-            <li class="cursos-item">
-              <h4 class="cursos-curso">Inteligência Artificial</h4>
-              <div class="cursos-especificacoes">
-                <span>Curso em video</span>
-                <span>xxh</span>
-              </div>
-            </li>
-            <li class="cursos-item">
-              <h4 class="cursos-curso">Rede de Computadores</h4>
-              <div class="cursos-especificacoes">
-                <span>Curso em video</span>
-                <span>xxh</span>
-              </div>
-            </li>
-            <li class="cursos-item">
-              <h4 class="cursos-curso">Hardware</h4>
-              <div class="cursos-especificacoes">
+              <h4 class="cursos-curso" data-target="ia">Inteligência Artificial</h4>
+              <div class="cursos-especificacoes" id="ia">
                 <span>Curso em video</span>
                 <span>xxh</span>
               </div>
@@ -188,40 +167,51 @@
         </div>
       </div>
     </section>
+
     <section class="secao projetos" id="projetos" aria-label="Projetos">
       <h3 class="h3-pequeno">Projetos</h3>
-      <div class="swiper">
-        <div class="projetos-container">
-          <div class="projetos-content">
-            <a href="#" class="projetos-imagem"><img src="img/projetos/bikecraft.jpg" alt="Bikecraft"></a>
-            <a href="#" class="projetos-titulo">Bikecraft</a>
-          </div>
-          <div class="projetos-content">
-            <a href="#" class="projetos-imagem"><img src="img/projetos/bikecraft.jpg" alt="Bikecraft"></a>
-            <a href="#" class="projetos-titulo">Bikecraft</a>
+      <div class="carrosel-pai">
+        <button class="navbtn" id="prev">←</button>
+        <div class="carrosel">
+          <div class="projetos-container" id="projetos-container">
+            <div class="projetos-content">
+              <a href="https://andressatomiozzo.github.io/projeto-bikcraft/" class="projetos-imagem"><img src="img/projetos/bikecraft.jpg"     alt="Imagem do projeto Bikecraft"></a>
+              <a href="https://andressatomiozzo.github.io/projeto-bikcraft/" class="projetos-titulo">Bikecraft</a>
+            </div>
+            <div class="projetos-content">
+              <a href="https://andressatomiozzo.github.io/projeto-android/" class="projetos-imagem"><img src="img/projetos/android.png"     alt="Imagem do projeto Android"></a>
+              <a href="https://andressatomiozzo.github.io/projeto-android/" class="projetos-titulo">Android</a>
+            </div>
+            <div class="projetos-content">
+              <a href="https://andressatomiozzo.github.io/projeto-interior_design/" class="projetos-imagem "><img src="img/projetos/interior_design.png"     alt="Imagem do projeto de Desing de Interiores"></a>
+              <a href="https://andressatomiozzo.github.io/projeto-interior_design/" class="projetos-titulo">Design</a>
+            </div>
+            <div class="projetos-content">
+              <a href="https://andressatomiozzo.github.io/projeto-login/" class="projetos-imagem"><img src="img/projetos/login.png"     alt="Imagem do projeto Login"></a>
+              <a href="https://andressatomiozzo.github.io/projeto-login/" class="projetos-titulo">Login</a>
+            </div>
+            <div class="projetos-content">
+              <a href="https://andressatomiozzo.github.io/projeto-social/" class="projetos-imagem"><img src="img/projetos/redes_sociais.png"     alt="Imagem do projeto de Redes sociais"></a>
+              <a href="https://andressatomiozzo.github.io/projeto-social/" class="projetos-titulo projetos-titulo-longo">Redes sociais</a>
+            </div>
           </div>
         </div>
+        <button class="navbtn" id="next">→</button>
       </div>
-
-      <div class="projetos-passador"></div>
-
+      <div class="dots" id="dots"></div>
     </section>
 
-    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper('.swiper', {
-        loop: true,
-        grabCursor: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        autoplay: {
-          delay: 4000,
-          disableOnInteraction: false,
-        },
-        effect: 'slide',
-      });
-    </script> -->
+    <footer>
+      <div class="contato" id="contato">
+        <div class="contato-content">
+          <h2>Contato</h2>
+          <p>Email: andressatomiozzo9@gmail.com</p>
+          <p>Telefone: +55 (65) 99985-5542</p>
+          <p><a href="https://github.com/andressatomiozzo">LinkedIn</a></p>
+        </div>
+        <p>Até mais 👋</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>

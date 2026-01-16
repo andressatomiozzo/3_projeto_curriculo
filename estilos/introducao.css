@@ -1,0 +1,167 @@
+.introducao {
+  position: relative;
+  max-width: 800px;
+  max-height: 800px;
+  margin: 50px auto 0 auto;
+}
+
+.profile img {
+  width: 100%;
+  border-radius: 50%;
+  position: relative;
+}
+
+.card {
+  position: absolute;
+  background: white;
+  padding: 17px 34px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #8f8f8f;
+}
+
+.card-hello {
+  display: flex;
+  left: -200px;
+  top: 360px;
+}
+
+.hand {
+  font-size: 3.5rem;
+}
+
+.card-hello strong {
+  font-size: 2.5rem;
+  color: #141414;
+  line-height: 0.95;
+}
+
+.card-web {
+  font-weight: 400;
+  right: -90px;
+  bottom: 80px;
+}
+
+.card-web strong {
+  color: #525252;
+}
+
+/* Ícones */
+.icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.icon img {
+  width: 100%;
+}
+
+.icon-html {
+  top: 0px;
+  right: 236px;
+}
+.icon-css {
+  top: 0px;
+  left: 236px;
+}
+.icon-js {
+  top: 160px;
+  right: 32px;
+}
+.icon-github {
+  width: 55px;
+  top: 160px;
+  left: 32px;
+}
+.icon-react {
+  width: 60px;
+  bottom: 340px;
+  right: -20px;
+}
+.icon-git {
+  width: 60px;
+  bottom: 120px;
+  left: 70px;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    position: absolute;
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+  .hand {
+    font-size: 2.5rem;
+  }
+  .card-hello {
+    left: 0px;
+    top: 0px;
+  }
+  .card-hello strong {
+    font-size: 2rem;
+  }
+  .card-web {
+    right: 0px;
+    bottom: 50px;
+  }
+
+  /* -----ICONES----- */
+
+  .icon-html {
+    top: 25px;
+    right: 150px;
+  }
+  .icon-css {
+    top: 230px;
+    left: 0px;
+  }
+  .icon-js {
+    top: 230px;
+    right: 5px;
+  }
+  .icon-github {
+    top: 500px;
+    left: 0px;
+  }
+  .icon-react {
+    bottom: 230px;
+    right: 0px;
+  }
+  .icon-git {
+    bottom: 60px;
+    left: 110px;
+  }
+}
+
+@media (max-width: 700px) {
+  .card {
+    font-size: 0.8rem;
+  }
+  .hand {
+    font-size: 2rem;
+  }
+  .card-hello strong {
+    font-size: 1.5rem;
+  }
+
+  /* -----ICONES----- */
+  .icon {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .introducao {
+    margin-top: 60px;
+  }
+
+  .card-hello {
+    top: -50px;
+  }
+  .card-web {
+    bottom: 0px;
+  }
+}

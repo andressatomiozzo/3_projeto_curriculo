@@ -1,0 +1,59 @@
+.projetos {
+  display: block;
+  position: relative;
+}
+
+.projetos h3::before {
+  margin-top: 40px;
+  margin-left: 20px;
+  background: url(../img/projetos.svg);
+}
+
+.swiper {
+  height: 650px;
+  /* overflow: hidden; */
+}
+
+.projetos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.projetos-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.projetos-imagem img {
+  width: 575px;
+  border-radius: 50px;
+}
+
+.projetos-titulo {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 7rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: linear-gradient(#ff0000, #c40000, #c40000);
+  -webkit-background-clip: text;
+  background-clip: text; /*faz o gradiente “seguir o formato” das letras. */
+  color: transparent; /*junto com o de baixo... */
+  -webkit-text-fill-color: transparent; /*tornam o texto invisível, deixando o gradiente aparecer dentro. */
+  position: absolute;
+}
+
+.projetos-passador-bolinha {
+  background: #e0e0e0;
+  opacity: 0.5;
+}
+.projetos-passador-bolinha-ativo {
+  background: #ff0000;
+  opacity: 1;
+}
